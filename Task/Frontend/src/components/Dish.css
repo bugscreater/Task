@@ -1,0 +1,98 @@
+header{
+    background: url("https://media.istockphoto.com/photos/orange-background-blank-frame-with-copy-space-picture-id1131425887?b=1&k=20&m=1131425887&s=170667a&w=0&h=gEm5E4TeMredIht0MaWhRoed3QRxHSaCfkANqI6E7g4=");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+header:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: url('../images/wave-bottom.svg');
+    height: 275px;
+}
+
+.header-content{
+    z-index: 1;
+    position: relative;
+}
+
+.header-content h1{
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+}
+
+.header-content p{
+    font-size: 20px;
+    margin: 20px 0 25px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.theme-btn{
+    border-radius: 50px;
+    background: white;
+    padding: 15px 30px;
+    min-width: 170px;
+    border: 2px solid white;
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 13px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 12px;
+    transition: all 0.5s ease-in;
+}
+
+.arr-down{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 0;
+    z-index: 1;
+    color: #fff;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.arr-up{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    z-index: 1;
+    color: #fff;
+    margin: 0 15px;
+    cursor: pointer;
+   
+}
+.mt-60{
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    header:after{
+       display: none;
+    }
+    .arr-down,.arr-up{
+        margin-top: 100vh;
+        
+    }
+    .mt-60{
+        margin-top: 30px;
+    }
+    
+    
+}

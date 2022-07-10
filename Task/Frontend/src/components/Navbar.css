@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav{
+    height: 80px;
+    
+}
+
+nav img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 17px;
+    left: 12%;
+    background-size: cover;
+}
+
+nav ul{
+    float: right;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    position: relative;
+    color: white;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 5px 0;
+}
+
+nav ul li:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+nav ul li:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+   
+}
+
+label #btn,
+label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media screen and (max-width: 1118px) {
+    nav img{
+        left: 8%;
+    }
+
+}
+
+@media screen and (max-width: 944px) {
+    nav img{
+        left: 6%;
+        top: 20px;
+        width: 130px;
+
+    }
+
+    nav ul li{
+        font-size: 17px;
+
+    }
+    
+}
+
+@media screen and (max-width: 860px) {
+    label #btn{
+        display: block;
+    }
+    ul{ 
+        overflow: hidden;
+        z-index: 2;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: url("https://media.istockphoto.com/photos/orange-background-blank-frame-with-copy-space-picture-id1131425887?b=1&k=20&m=1131425887&s=170667a&w=0&h=gEm5E4TeMredIht0MaWhRoed3QRxHSaCfkANqI6E7g4=");
+        background-size: cover;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        left: -100%;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    #check:checked ~ label #btn{
+        display: none;
+    }
+
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+
+
+    
+}
+

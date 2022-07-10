@@ -1,0 +1,60 @@
+.left{
+        display: flex;
+        width: 50%;
+        height: auto;
+
+}
+.left img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 17px;
+   
+    background-size: cover;
+}
+
+.left{
+    height: 100vh;
+}
+
+.left{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+     background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)),url('../images/bg_dishes.jpg');
+     background-size:cover;
+}
+
+.left .copy{
+    color: white;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.left p{
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    
+    .left{
+        height: 400px;
+    }
+    .left{
+        width: 100%;
+    }
+    
+    
+}
